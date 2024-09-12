@@ -6,6 +6,7 @@ class MyCustomListTile extends StatelessWidget {
     super.key,
     required this.text,
   });
+
   final String text;
 
   @override
