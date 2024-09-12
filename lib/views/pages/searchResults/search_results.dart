@@ -11,7 +11,8 @@ class SearchResultPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(SearchResultController()); // Create the controller
+    final controller =
+        Get.put(SearchResultController()); // Create the controller
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -72,8 +73,8 @@ class SearchResultPage extends StatelessWidget {
                             var data = controller.searchResults[
                                 index]; // Use the searchResults list
                             return GestureDetector(
-                              onTap: (){
-                                Get.offAll(()=> const SingleProductViewPage());
+                              onTap: () {
+                                Get.offAll(() => const SingleProductViewPage());
                               },
                               child: MyCustomContainer(
                                 image: data.image,
