@@ -11,8 +11,7 @@ class SearchResultPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller =
-        Get.put(SearchResultController()); // Create the controller
+    final controller = Get.put(SearchResultController()); // Create the controller
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
