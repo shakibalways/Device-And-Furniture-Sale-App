@@ -5,9 +5,11 @@ import 'package:belives_store_app_app/components/my_custom_text.dart';
 import 'package:belives_store_app_app/data%20model/order_list.dart';
 import 'package:belives_store_app_app/components/my_custom_shipping_container.dart';
 import 'package:belives_store_app_app/views/pages/payment_successful/payment_successfully.dart';
+import 'package:belives_store_app_app/views/pages/shipping_new_address/google_maps.dart';
 import 'package:belives_store_app_app/views/pages/single_product_view/single_product_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class OrderReviewPage extends StatelessWidget {
   const OrderReviewPage({super.key});
@@ -87,28 +89,39 @@ class OrderReviewPage extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Icon(Icons.pin_drop),
-                    const MyCustomText(
-                      title: "139 Haystreet,Perth",
-                      fWeight: FontWeight.w600,
+                GestureDetector(
+                  onTap: (){
+                    Get.to(()=>const GoogleMaps());
+                  },
+                  child: Container(
+                   decoration: BoxDecoration(
+                     color: Colors.grey.shade200,
+                     borderRadius: BorderRadius.circular(5)
+                   ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Icon(Icons.location_on_outlined),
+                        const MyCustomText(
+                          title: "139 Haystreet,Perth",
+                          fWeight: FontWeight.w600,
+                        ),
+                        Container(
+                          height: 30,
+                          width: 80,
+                          decoration: BoxDecoration(
+                              color: const Color(0xffC6AB59),
+                              borderRadius: BorderRadius.circular(8)),
+                          child: const Center(
+                              child: MyCustomText(
+                            title: "Change",
+                            fSize: 14,
+                            fWeight: FontWeight.w500,
+                          )),
+                        )
+                      ],
                     ),
-                    Container(
-                      height: 30,
-                      width: 80,
-                      decoration: BoxDecoration(
-                          color: const Color(0xffC6AB59),
-                          borderRadius: BorderRadius.circular(8)),
-                      child: const Center(
-                          child: MyCustomText(
-                        title: "Change",
-                        fSize: 14,
-                        fWeight: FontWeight.w500,
-                      )),
-                    )
-                  ],
+                  ),
                 ),
                 const SizedBox(height: 30),
                 const MyCustomShippingContainer(),

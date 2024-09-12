@@ -1,6 +1,7 @@
 import 'package:belives_store_app_app/components/my_custom_button.dart';
 import 'package:belives_store_app_app/components/my_custom_divider.dart';
 import 'package:belives_store_app_app/components/my_custom_text.dart';
+import 'package:belives_store_app_app/views/pages/shipping_new_address/google_maps.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -67,10 +68,13 @@ class MyUserProfileBottomSheet extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            const Padding(
-              padding: EdgeInsets.all(20),
+            Padding(
+              padding: const EdgeInsets.all(20),
               child: MyCustomButton(
                 title: "Apply Filters (4)",
+                onTap: () {
+                  Get.to(() => const GoogleMaps());
+                },
               ),
             )
           ],
