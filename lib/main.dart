@@ -1,4 +1,4 @@
-import 'package:belives_store_app_app/views/pages/category/cate.dart';
+import 'package:belives_store_app_app/views/pages/category/categoryes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

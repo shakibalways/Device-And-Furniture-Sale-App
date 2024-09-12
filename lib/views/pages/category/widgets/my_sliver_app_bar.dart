@@ -56,7 +56,7 @@ class MySliverAppBar extends StatelessWidget {
       collapsedHeight: 120,
       floating: false,
       pinned: true, // app not hide for sliverAppBar
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Colors.deepPurple[100],
       leading: const Icon(
         Icons.filter_list,
       ),

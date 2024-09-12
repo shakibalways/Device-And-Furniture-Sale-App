@@ -3,22 +3,22 @@ class SearchResultList {
     "products": [
       {
         "image": "assets/home_image/beosound.png",
-        "itemName": "Shakib",
+        "itemName": "Beosound 1",
         "itemPrice": "600"
       },
       {
         "image": "assets/home_image/biolit.png",
-        "itemName": "RAJU",
+        "itemName": "Beolit 17",
         "itemPrice": "800"
       },
       {
         "image": "assets/home_image/headphone.png",
-        "itemName": "siddik",
+        "itemName": "Beoplay H9 3r…",
         "itemPrice": "200"
       },
       {
         "image": "assets/home_image/speakers.png",
-        "itemName": "ROBIUL",
+        "itemName": "Beoplay A9",
         "itemPrice": "300"
       },
       {
