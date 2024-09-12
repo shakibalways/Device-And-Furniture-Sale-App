@@ -8,7 +8,6 @@ class MyUserProfileBottomSheet extends StatelessWidget {
   const MyUserProfileBottomSheet({
     super.key,
   });
-
   @override
   Widget build(BuildContext context) {
     return Container(
