@@ -9,7 +9,6 @@ import 'package:belives_store_app_app/views/pages/shipping_new_address/google_ma
 import 'package:belives_store_app_app/views/pages/single_product_view/single_product_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class OrderReviewPage extends StatelessWidget {
   const OrderReviewPage({super.key});
