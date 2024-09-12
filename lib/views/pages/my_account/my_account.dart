@@ -193,7 +193,7 @@ class MyAccountPage extends StatelessWidget {
                   Get.to(() => const BottomNavBarPage());
 
                   Get.snackbar("Message", "Profile Save Success");
-                  return;
+
                 },
               )
             ],
