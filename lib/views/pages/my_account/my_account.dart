@@ -1,8 +1,10 @@
 import 'package:belives_store_app_app/components/my_custom_appbar.dart';
 import 'package:belives_store_app_app/components/my_custom_button.dart';
 import 'package:belives_store_app_app/components/my_custom_text.dart';
-import 'package:belives_store_app_app/controller/getx/uiController/profile/profile.dart';
+import 'package:belives_store_app_app/controller/getx/uiController/userProfile/edit_profile.dart';
+import 'package:belives_store_app_app/views/pages/bottomNavBar/bottom_nav_bar.dart';
 import 'package:belives_store_app_app/views/pages/my_account/widget/my_custom_text_form_field.dart';
+import 'package:belives_store_app_app/views/pages/user_profile/user_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -141,40 +143,45 @@ class MyAccountPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 50),
-              const Form(
+              Form(
                   child: Column(
                 children: [
                   MyCustomFormField(
                     text: 'Full Name',
                     icon: Icons.person,
+                    controller: controller.nameController,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   MyCustomFormField(
                     text: "Email",
                     icon: Icons.email,
+                    controller: controller.emailController,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   MyCustomFormField(
                     text: 'Phone No',
                     icon: Icons.call,
+                    controller: controller.phoneNOController,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   MyCustomFormField(
                     text: 'Address',
                     icon: Icons.location_city,
+                    controller: controller.addressController,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   MyCustomFormField(
                     text: 'Password',
                     icon: Icons.key_outlined,
+                    controller: controller.passwordController,
                   ),
                 ],
               )),
@@ -184,6 +191,8 @@ class MyAccountPage extends StatelessWidget {
               MyCustomButton(
                 title: "Save Profile",
                 onTap: () {
+                  Get.to(() => const BottomNavBarPage());
+
                   Get.snackbar("Message", "Profile Save Success");
                   return;
                 },

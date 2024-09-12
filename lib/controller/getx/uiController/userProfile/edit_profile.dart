@@ -30,4 +30,24 @@ class ProfileController extends GetxController {
       profileImage.value = File(pickedFile.path);
     }
   }
+
+  @override
+  void onInit() {
+    nameController.text = "Md.Abdullah Al Shakib";
+    emailController.text = "shakib@gmail.com";
+    phoneNOController.text = "01709**********";
+    addressController.text = "Uttora,Dhaka";
+    passwordController.text = "00***52**";
+    super.onInit();
+  }
+
+  @override
+  void dispose() {
+    nameController.dispose();
+    emailController.dispose();
+    phoneNOController.dispose();
+    addressController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
 }

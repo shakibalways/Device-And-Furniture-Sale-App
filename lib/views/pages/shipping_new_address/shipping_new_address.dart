@@ -54,7 +54,7 @@ class ShippingNewAddressPage extends StatelessWidget {
                   const CustomContainer(
                     title: "CONTINUE TO PAYMENT",
                     icon: Icons.arrow_right_alt,
-                  )
+                  ),
                 ],
                 child: Image.asset(
                   "assets/map/location.png",

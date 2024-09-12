@@ -166,7 +166,7 @@ class CartPage extends StatelessWidget {
                   title: "CHECKOUT",
                   icon: Icons.arrow_right_alt,
                   onTap: () {
-                    Get.offAll(() => const PaymentMethodPage());
+                    Get.to(() => const PaymentMethodPage());
                   },
                 )
               ],
