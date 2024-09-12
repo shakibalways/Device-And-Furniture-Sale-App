@@ -2,6 +2,7 @@ import 'package:belives_store_app_app/views/pages/bottomNavBar/bottom_nav_bar.da
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
