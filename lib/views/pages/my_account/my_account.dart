@@ -4,7 +4,6 @@ import 'package:belives_store_app_app/components/my_custom_text.dart';
 import 'package:belives_store_app_app/controller/getx/uiController/userProfile/edit_profile.dart';
 import 'package:belives_store_app_app/views/pages/bottomNavBar/bottom_nav_bar.dart';
 import 'package:belives_store_app_app/views/pages/my_account/widget/my_custom_text_form_field.dart';
-import 'package:belives_store_app_app/views/pages/user_profile/user_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
