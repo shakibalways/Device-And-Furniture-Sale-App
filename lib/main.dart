@@ -1,5 +1,4 @@
 import 'package:belives_store_app_app/views/pages/bottomNavBar/bottom_nav_bar.dart';
-import 'package:belives_store_app_app/views/pages/user_profile/user_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
