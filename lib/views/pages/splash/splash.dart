@@ -16,6 +16,7 @@ class SplashPage extends StatelessWidget {
           Image.asset("assets/images/onboardingimage.png"),
           // Tranform Text
           const GradientAnimationText(
+
             text: Text(
               'Belives Store',
               style: TextStyle(
